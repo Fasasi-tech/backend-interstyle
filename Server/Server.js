@@ -12,7 +12,7 @@ const validUsername = 'InterstyleRetai\\interstyleadmin';
 const validPassword = 'Sunshine@12';
 
 app.use(cors({
-  origin: ["http://localhost:3000", "https://interstyle-react.onrender.com/"]
+  origin: ["http://localhost:3000", "https://interstyle-reactvs.onrender.com/"]
 }));
 app.use(bodyParser.json());
 
