@@ -12,8 +12,10 @@ const validUsername = 'InterstyleRetai\\interstyleadmin';
 const validPassword = 'Sunshine@12';
 
 app.use(cors({
-  origin: ["http://localhost:3000", "https://interstyle-reactvs.onrender.com/"]
-}));
+  origin:["http://localhost:3000", "https://interstyle-stack.onrender.com"]
+}
+
+));
 app.use(bodyParser.json());
 
 
@@ -64,7 +66,7 @@ const authenticate = (req, res, next) => {
       const base_url = api;
 
       // Construct the URL for the barcode lookup
-      const url = `${base_url}&SearchTxt=${searchTxt}`;
+      const url = `http://51.141.91.64:2048/BC200UP/api/Reeltech/Item/v1.0/priceChecker?company=Interstyle%20Home&SearchTxt=${searchTxt}`;
   
       // Set up headers with basic authentication
       const headers = {
